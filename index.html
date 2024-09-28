@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paint</title>
+    <link rel="stylesheet" href="./style.css" />
+
+</head>
+<body>
+    <main>
+        <section class="start-sec">
+            <h3>Let's begin your journey into art and inspiration!</h3>
+            <button class="btn start">Start</button>
+        </section>
+
+        <section class="paint-sec">
+        <section class="tools-bar">
+            <div class="logo">
+                <h1>Paint</h1>
+            </div>
+
+            <div class="tools">
+              <div class="container">
+                <button class="restart"><img src="./icons/restart.png" alt=""></button>
+                <button class="bg-color"><img src="./icons/bg-color.png" alt="back-ground-color"></button>
+                <button class="erase"><img src="./icons/erase.png" alt="erase"></button>
+              </div>
+              <h5>tools</h5>
+            </div>
+            
+            <div class="size">
+            <div class="container">
+              <button class="size-inc">+</button>
+              <div class="size-count"></div>
+              <button class="size-dec">-</button>
+            </div>
+              <h5>size</h5>
+            </div>
+            
+            <div class="colors">
+              <div class="container">
+                <button class="red"></button>
+                <button class="orange"></button>
+                <button class="yellow"></button>
+                <button class="green"></button>
+                <button class="blue"></button>
+                <button class="purple"></button>
+                <button class="pink"></button>
+                <button class="brown"></button>
+                <button class="black"></button>
+                <button class="white"></button>
+              </div>
+
+                <div class="color-wheel-div">
+                    <input type="color" id="colorPicker" value="#ff5733">
+                    <button class="colors_btn" onclick="document.getElementById('colorPicker').click();"><img src="./icons/color-wheel.png" alt=""></button>
+                    <h5>colors</h5>
+                </div>
+            </div>
+        
+               
+        </section>
+
+        <section class="canvas-section">
+            <canvas id="canvas"></canvas>
+            <button class="btn Download">Download</button>
+        </section>
+    </section>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>

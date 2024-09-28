@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./imgs/back_ground.jpg);
+    background-size: cover;
+}
+button{
+    cursor:pointer;
+}
+h1{
+    padding: 0 1.5em;
+    font-size: 2em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btn{
+    width: 80px;
+    height: 30px;
+    background-color: rgb(237, 25, 199);
+    border: none;
+    border-radius: 8px;
+
+}
+.btn:hover{
+    border:0.2rem;
+    border-color: #670565;
+    background-color: #ec7bea;
+}
+.canvas-section{
+   text-align: center;
+}
+
+.canvas-section button{
+    margin-left: 2rem;
+}
+#canvas {
+    background-color: white;
+    cursor:crosshair;
+    margin-top:2em;
+ }
+
+/****************** globals end ***************/
+
+.start-sec{
+    width: 100%;
+    height: 100vh;
+    align-content: center;
+    text-align: center;
+    position: absolute;
+    background-image: url(./imgs/back_ground.jpg);
+    background-size: cover;
+}
+
+.start-sec > * {
+    margin: 15px;
+}
+
+.go-up{
+    animation: up  1.5s  linear  1 forwards;
+}
+
+@keyframes up {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-100%);
+    }   
+
+}
+
+/***************** start section end *************/
+
+.tools-bar{
+    display: flex;
+    gap:3em;
+    padding: 0.5em;
+    background-color: #f7ecf755;
+    filter: blur(90%);
+    box-shadow: 0 0 7px #5b145a;
+    align-items: center;
+}
+.tools .container > button{
+    width: 30px;
+    height: 30px;
+    border-color: aliceblue;
+    border-width: 3px;
+}
+.tools .container > button img{
+    width: 100%;
+}
+.tools h5{
+    margin-left: 40px;
+}
+
+/**************tools style end**********/
+
+.size .container{
+    display: flex;
+    gap:0.5em;
+    background-color:aliceblue;
+    font-size: 1.2em;
+    align-items: center;
+}
+.size .container >button {
+    width: 30px;
+    height: 30px;
+    border-color: aliceblue;
+    border-width: 3px;
+    font-size: 1em;
+}
+.size h5{
+    margin-left: 33px;
+
+}
+/*************** size style end ***********/
+
+.colors{
+    display: flex;
+    gap: 2em;
+}
+.colors .container > button{
+    width:20px;
+    height: 20px;
+    border-color: aliceblue;
+    border-width: 3px;
+}
+.colors .container {
+    display: grid;
+    grid-template-columns: repeat(5,1.3rem);
+    grid-template-rows: repeat(3,1.3em);
+    gap:0;
+}
+
+.color-wheel-div h5{
+   padding-left: 0.4em;
+   padding-top: 0.5em;
+}
+.red{
+    background-color: red;
+}
+.orange{
+    background-color:orange;
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color:green;
+}
+.blue{
+    background-color:blue;
+}
+.purple{
+    background-color:purple;
+}
+.pink{
+    background-color:rgb(192, 88, 105);
+}
+.brown{
+    background-color:rgb(71, 23, 8);
+}
+.black{
+    background-color:black;
+}
+.white{
+    background-color:white;
+}
+
+/*********** colors buttons style end *************/
+
+#colorPicker {
+    display: none;
+    margin: 50vw;
+}
+.color-wheel-div .colors_btn{
+    width: 3em;
+    height: 3em;
+    border-color: aliceblue;
+    border-width: 3px;
+}
+.colors_btn img{
+    width: 100%;
+}
+
+/************ color picker style end ***********/
+
+
